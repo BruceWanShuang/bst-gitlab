@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bst.gitlab.dao.GitCodeCountMapper">
+
+ <!--   <select id="getBy">
+        select gp.project_id,gp.name,sum(gcc.add_row_count) as add_row_count,sum(gcc.delete_row_count) delete_row_count,sum(gcc.total_row_count) as total_row_count  from git_code_count as gcc
+        join git_project as gp on gcc.project_id = gp.project_id
+        <where>
+            <if test="committerName!= null and committerName!=''">
+              and gcc.committer_name=#{committerName}
+            </if>
+            <if test="beginOperDate!= null and beginOperDate!=''">
+              and gcc.oper_date &gt;= #{beginOperDate}
+            </if>
+            <if test="endOperDate!= null and endOperDate!=''">
+              and gcc.oper_date &lt; #{endOperDate}
+            </if>
+        </where>
+        group by gcc.project_id
+    </select>-->
+</mapper>
